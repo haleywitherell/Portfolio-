@@ -1,0 +1,123 @@
+
+/* Set Colors */
+
+:root {
+--font-family: 'Courier New', Courier, monospace;
+--light: #fff;
+--dark: #131313; 
+--background: rgb(122, 153, 238);
+}
+
+/* Class's */
+
+.gradient {
+    background-image: radial-gradient(ellipse, rgb(122, 153, 238), white);
+}
+
+
+.flex-container {
+    display:inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+/* Id's */
+
+#scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 20px;
+    background-color: lightgray;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+/* Header */
+
+header {
+    font-size: 22px;
+    color: var(--dark);
+    width: 100%;
+    padding: 5px 10px; 
+}
+
+header h1 {
+    display: inline-block;
+}
+
+nav {
+    padding-top: 10px;
+    margin-right: 15px;
+    float: right;
+    font-size: 25px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    display:inline-block;
+    padding: 10px;
+    color: var(--dark); 
+}
+
+/* header and footer link settings */
+
+a:link { color:var(--light) }
+
+a:visited { color:var(--dark) }
+
+a:active { color:mediumorchid }
+
+a:hover {color:lime}
+
+
+/* grouped these all together */
+section h2, main h2, p {
+    color: var(--dark);
+    width: 100%;
+    padding: 5px 10px; 
+}
+
+/* Work Examples & Images */
+
+
+/* Footer */
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: var(--dark);
+    padding: 5px 10px;
+}
+
+footer h3 {
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer li {
+    display:inline-block;
+    text-align: center;
+    margin: 5px;
+}
