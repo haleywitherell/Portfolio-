@@ -22,12 +22,6 @@
     padding: 10px;
 }
 
-.box {
-    align-items: center;
-    display:inline-flex;
-    flex-direction: column;
-    justify-content:space-around
-}
 
 /* Id's */
 
@@ -36,6 +30,17 @@
     overflow-x: hidden;
 }
 
+#about-me {
+    margin-top: 175px;
+
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+
 html {
     font-size: 20px;
     background-color: lightgray;
@@ -43,10 +48,6 @@ html {
 
 body {
     font-family: var(--font-family);
-}
-
-#about-me {
-    margin-top: 175px;
 }
 
 /* Header */
@@ -66,6 +67,7 @@ header {
 
 header h1 {
     display: inline-block;
+    margin: 25px;
 }
 
 nav {
@@ -115,6 +117,7 @@ section p {
     text-align: center;
     color: darkslateblue;
     font-size: 24px;
+    line-height: 1.5;
 }
 
 /* Work Examples & Images */
