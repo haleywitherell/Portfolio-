@@ -38,13 +38,23 @@ body {
     font-family: var(--font-family);
 }
 
+#about-me {
+    margin-top: 175px;
+}
+
 /* Header */
 
 header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     font-size: 22px;
     color: var(--dark);
     width: 100%;
     padding: 5px 10px; 
+    height: 150px;
+    position: fixed;
 }
 
 header h1 {
@@ -95,15 +105,23 @@ section h2, main h2, p {
 
 /* Work Examples & Images */
 
+main {
+    margin-bottom: 150px;
+}
 
 /* Footer */
 
 footer {
-    left: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     bottom: 0;
     width: 100%;
     color: var(--dark);
     padding: 5px 10px;
+    height: 150px;
 }
 
 footer h3 {
@@ -120,4 +138,15 @@ footer li {
     display:inline-block;
     text-align: center;
     margin: 5px;
+}
+
+@media screen and (max-width: 963px) {
+header {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+}
+#about-me {
+    margin-top: 225px;
+}
 }
