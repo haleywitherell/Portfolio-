@@ -107,6 +107,8 @@ section h2, main h2, p {
 
 main {
     margin-bottom: 150px;
+    min-height: 400px;
+    clear: both;
 }
 
 /* Footer */
