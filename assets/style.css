@@ -14,7 +14,6 @@
     background-image: radial-gradient(ellipse, rgb(122, 153, 238), white);
 }
 
-
 .flex-container {
     display:inline-flex;
     flex-wrap: wrap;
@@ -22,6 +21,14 @@
     margin: 10px;
     padding: 10px;
 }
+
+.box {
+    align-items: center;
+    display:inline-flex;
+    flex-direction: column;
+    justify-content:space-around
+}
+
 /* Id's */
 
 #scroll {
@@ -101,6 +108,13 @@ section h2, main h2, p {
     color: var(--dark);
     width: 100%;
     padding: 5px 10px; 
+    text-align: center;
+}
+
+section p {
+    text-align: center;
+    color: darkslateblue;
+    font-size: 24px;
 }
 
 /* Work Examples & Images */
@@ -110,6 +124,7 @@ main {
     min-height: 400px;
     clear: both;
 }
+
 
 /* Footer */
 
