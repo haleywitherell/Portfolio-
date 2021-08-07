@@ -149,7 +149,7 @@ section p {
 
 main {
     margin-bottom: 150px;
-    min-height: 400px;
+    min-height: 300px;
     clear: both;
 }
 
@@ -167,6 +167,7 @@ footer {
     color: var(--dark);
     padding: 5px 10px;
     height: 150px;
+    position: fixed;
 }
 
 footer h3 {
