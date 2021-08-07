@@ -50,17 +50,29 @@
   }
   
   @keyframes wave-animation {
-      0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(14.0deg) }
+      0% { transform: rotate(0.0deg) }
+     10% { transform: rotate(20.0deg) }
   }
+
+/* html */
 
 html {
     font-size: 20px;
     background-color: lightgray;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
 }
+
+/* body */
 
 body {
     font-family: var(--font-family);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
 }
 
 /* Header */
@@ -145,7 +157,7 @@ main {
 /* Footer */
 
 footer {
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -171,6 +183,7 @@ footer li {
     display:inline-block;
     text-align: center;
     margin: 5px;
+    clear: both;
 }
 
 @media screen and (max-width: 963px) {
