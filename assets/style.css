@@ -2,198 +2,138 @@
 /* Set Colors */
 
 :root {
---font-family: 'Courier New', Courier, monospace;
---light: #fff;
---dark: #131313; 
---background: rgb(122, 153, 238);
-}
-
-/* Class's */
-
-.gradient {
-    background-image: radial-gradient(ellipse, rgb(122, 153, 238), white);
-}
-
-.flex-container {
-    display:inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px;
-    padding: 10px;
-}
-
-
-/* Id's */
-
-#scroll {
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-#about-me {
-    margin-top: 175px;
-
-}
-
-#box {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
- }
-
- #wave {
-    animation-name: wave-animation;  
-    animation-duration: 1s;      
-    animation-iteration-count:infinite;  
-    transform-origin: 50% 50%;       
-    display: inline-block;
-  }
-  
-  @keyframes wave-animation {
-      0% { transform: rotate(0.0deg) }
-     10% { transform: rotate(20.0deg) }
-  }
-
-/* html */
-
-html {
-    font-size: 20px;
-    background-color: lightgray;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-}
-
-/* body */
-
-body {
-    font-family: var(--font-family);
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-}
-
-/* Header */
-
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 22px;
-    color: var(--dark);
-    width: 100%;
-    padding: 5px 10px; 
-    height: 150px;
-    position: fixed;
-}
-
-header h1 {
-    display: inline-block;
-    margin: 25px;
-}
-
-nav {
-    padding-top: 10px;
-    margin-right: 15px;
-    float: right;
-    font-size: 25px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-nav a {
-    display:inline-block;
-    padding: 10px;
-    color: var(--dark); 
-}
-
-/* header and footer link settings */
-
-a:link { color:var(--light) }
-
-a:visited { color:var(--dark) }
-
-a:active { color:mediumorchid }
-
-a:hover {color:lime}
-
-
-/* grouped these all together */
-section h2, main h2, p {
-    color: var(--dark);
-    width: 100%;
-    padding: 5px 10px; 
-    text-align: center;
-}
-
-section p {
-    text-align: center;
-    color: darkslateblue;
-    font-size: 24px;
-    line-height: 1.5;
-}
-
-/* Work Examples & Images */
-
-main {
-    margin-bottom: 150px;
-    min-height: 300px;
-    clear: both;
-}
-
-
-/* Footer */
-
-footer {
-    /* position: fixed; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    bottom: 0;
-    width: 100%;
-    color: var(--dark);
-    padding: 5px 10px;
-    height: 150px;
-    position: fixed;
-}
-
-footer h3 {
-    text-align: center;
-}
-
-footer ul {
-    list-style-type: none;
-    text-align: center;
-    font-size: 18px;
-}
-
-footer li {
-    display:inline-block;
-    text-align: center;
-    margin: 5px;
-    clear: both;
-}
-
-@media screen and (max-width: 963px) {
-header {
-    flex-direction: column;
-    justify-content: space-around;
-    height: 200px;
-}
-#about-me {
-    margin-top: 225px;
-}
-}
+    --font-family: 'Courier New', Courier, monospace;
+    --light: #fff;
+    --dark: #131313; 
+    --background: rgb(122, 153, 238);
+    }
+    
+    
+    /* Class's */
+    
+    .gradient {
+        background-image: radial-gradient(ellipse, rgb(100, 138, 241), white);
+    }
+    
+    
+    
+    /* emoji wave function */
+     #wave {
+        animation-name: wave-animation;  
+        animation-duration: 1s;      
+        animation-iteration-count:infinite;  
+        transform-origin: 50% 50%;       
+        display: inline-block;
+      }
+      
+      @keyframes wave-animation {
+          0% { transform: rotate(0.0deg) }
+         10% { transform: rotate(20.0deg) }
+      }
+    
+    
+    /* Header */
+    
+    .jumbotron {
+        color: white;
+        height: 175px;
+        text-align: center;
+        
+    }
+    
+    h1 {
+        font-size: 50px;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    nav ul {
+        font-size: 25px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    #nav-bar {
+        text-align: center;
+        justify-content: center;
+    }
+    
+    /* header and footer link settings */
+    
+    a:visited { color:var(--dark) }
+    
+    a:hover {color:lime}
+    
+    
+    /* Solid border */
+    hr.solid {
+        border-top: 1.5px solid #bbb;
+      }
+    
+    /* body */
+    
+    body {
+        font-family: var(--font-family);
+    }
+    
+    
+    /* grouped these all together */
+    h2, p {
+        color: var(--dark);
+        text-align: center;
+    }
+    
+    p {
+        text-align: center;
+        color: var(--dark);
+        font-size: 24px;
+        line-height: 1.75;
+    }
+    
+    /* Work Examples & Images */
+    
+    main {
+        min-height: 300px;
+        clear: both;
+    }
+    
+    
+    /* Footer */
+    
+    footer {
+        justify-content: center;
+        align-items: center;
+        color: var(--dark);
+    }
+    
+    footer h3 {
+        text-align: center;
+    }
+    
+    footer ul {
+        list-style-type: none;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    footer li {
+        color: var(--dark);
+        display:inline-block;
+        text-align: center;
+        margin: 5px;
+        clear: both;
+    }
+    
+    @media screen and (max-width: 963px) {
+    header {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 200px;
+    }
+    }

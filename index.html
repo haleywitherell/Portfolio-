@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haley Witherell's Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
@@ -12,52 +13,82 @@
 
 <body>
 
-    <div id="scroll"> 
-
     <!--Header-->
-    <header class="gradient">
+    <header class="jumbotron gradient">
         <h1>Haley Witherell</h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">About</a>
-                </li>
-                <li>
-                    <a href="/">Work</a>
-                </li>
-                <li>
-                    <a href="/">Resume</a>
-                </li>
-                <li>
-                    <a href="/">Contact</a>
-                </li>
-            </ul>
-        </nav>
     </header>
 
+<!-- Nav bar below the header -->
+    <nav id="nav-bar" class="container">
+        <ul>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#work">Work</a>
+            </li>
+            <li>
+                <a href="./Files/Haley Witherell Resume Portfolio.pdf">Resume</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <hr class="solid container">
 
     <!--About Me Section-->
-    <section id="about-me">
+    <section id="about" class="container">
         <h2>About Me</h2>
         <span id="wave"></span>
             <p>Hey i'm Haley <span id="wave">👋🏾</span> Welcome to my portfolio! My current background is in communications, marketing and PR. I am new to web development but i'm working hard to master this craft by improving and expanding my skill set. Check back soon for updates!</p>
     </section>
 
+    <hr class="solid container">
+
     <!--Work-->
-    <main>
+    <main id="work" class="container">
         <h2>Work</h2>
-        <div id="box">
-            <img class="example flex-container" src="./Images/Image 1.png" width="400" heigth="400" alt="Work Example 1"/>  
-            <img class="example flex-container box" src="./Images/Image 2.png" width="400" heigth="400" alt="Work Example 2"/>
-            <img class="example flex-container box" src="./Images/Image 3.png" width="400" heigth="400" alt="Work Example 3"/>
+        <p>Visit my GitHub account to view all past projects!</p>
+
+        <div class="container d-flex justify-content-center">
+            <div class="comlumn">
+                <div id="img1">
+                    <img class="img-fluid rounded" src="./Images/Weekly Planner.gif" alt="Work Example 1"/>  
+                </div>
+            </div>
         </div>
-        
+
+        <br>
+        <br>
+
+        <div class="container d-flex justify-content-center">
+            <div class="comlumn">
+                <div id="img1">
+                    <img class="img-fluid rounded" src="./Images/Password Generator.gif" alt="Work Example 2"/>  
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container d-flex justify-content-center">
+            <div class="comlumn">
+                <div id="img1">
+                    <img class="img-fluid rounded" src="./Images/Coding Quiz Challenge.gif" alt="Work Example 3"/>  
+                </div>
+            </div>
+        </div>
+
     </main>
         
+    <hr class="solid container">
    
     <!--Footer-->
-    <footer class="gradient">
-        <h3>Get In Touch With Me!</h3>
+    <footer class="jumbotron gradient">
+        <h3 id="contact">Get In Touch With Me!</h3>
             <ul>
                 <li>Phone Number: 513-379-5862</li>
                 <li>Email: hwitherell22@gmail.com</li>
@@ -69,8 +100,6 @@
                 </li>
             </ul>
     </footer>
-
-</div>
 
 </body>
 </html>
