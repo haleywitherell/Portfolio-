@@ -6,12 +6,12 @@ HTML:
 I insetred images that are displayed on the webpage
 - I linked my LinkedIN and Github at the bottom of the page under contact info
 
-CSS:
-- The CSS stles eveything in the webpage
-- I used CSS to layout everything in the header, including my name and the nav bar items 
+CSS/Bootstrap:
+- The CSS and Bootstrap styles eveything on the webpage
+- I used CSS and Bootstrap to design the overall layout
 - I used the gradient feature to set the background for the header and footer
 - CSS adjusted fonts, line spacing, overall page spacing, colors 
-- I used flex box to center the images on the page 
+- I used the Bootstrap flex box feature to center the work sampels on the page 
 
 # Apperance 
 ![screenshot of webpage](./Images/screenshot.png)
