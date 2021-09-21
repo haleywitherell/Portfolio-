@@ -14,7 +14,7 @@ CSS:
 - I used flex box to center the images on the page 
 
 # Apperance 
-(./Images/screenshot.png)
+![screenshot of webpage](./Images/screenshot.png)
 
 # Known Bugs
 - There are no known bugs. 
