@@ -1,3 +1,6 @@
+# About
+This is my portfolio page where I will showcase my previous work.
+
 # Technologies used: 
 
 HTML:
